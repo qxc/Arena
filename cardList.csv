@@ -1,0 +1,49 @@
+Name,type,Description,Card Status,Supply,Modifier,Image,MiniImage,Player
+Teleport,Power-up,Occurs at the start of move phase. Move to any non-occupied square.,x,1,,Teleport,Teleport,
+Hawk Dive,Power-up,Occurs during move phase. Move to one of the marked locations. Kill any stationary enemies at that location.,x,1,,swoop2,hawk,
+Swipe,Core,Attack as shown.,x,1,,strike2,swipe,P4
+Swipe,Core,Attack as shown.,x,1,,strike2,swipe,P3
+Swipe,Core,Attack as shown.,x,1,,strike2,swipe,P2
+Swipe,Core,Attack as shown.,x,1,,strike2,swipe,P1
+Flail,Core,"You may replace your next card. \newline Wolf Form: In addition, you may replace your next Form.",x,1,,flail,flail,P4
+Flail,Core,"You may replace your next card. \newline Wolf Form: In addition, you may replace your next Form.",x,1,,flail,flail,P3
+Flail,Core,"You may replace your next card. \newline Wolf Form: In addition, you may replace your next Form.",x,1,,flail,flail,P2
+Flail,Core,"You may replace your next card. \newline Wolf Form: In addition, you may replace your next Form.",x,1,,flail,flail,P1
+Jellyfish Throw,Weapon,"Modifies a move. Instead of moving, attack as shown in the direction of that movement. Occurs during the other phase.",x,1,x,sonic,jellyfish,
+Whatever,Power-up,"When revealed, replace this card with any card in hand. \newline Wolf Form: In addition, you may replace your Form.",x,1,,shrug,shrug,
+RPG,Weapon,Attack as shown.,x,1,,rpg2,rpg,
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,right2,right2,P4
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,right2,right2,P3
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,right2,right2,P2
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,right2,right2,P1
+Railgun,Weapon,Attack as shown.,x,1,,railgun2,railgun,
+Snake Strike,Power-up,Executes at start of turn. Modifies a movement: Move in indicated direction and immediately Swipe. ,x,1,x,snakeStrike,snakeStrike,
+Wolf Form,Core,Played as a Form. Increases the priority of the modified card. May also change its function.,x,1,x,wolf,wolf,P4
+Wolf Form,Core,Played as a Form. Increases the priority of the modified card. May also change its function.,x,1,x,wolf,wolf,P3
+Wolf Form,Core,Played as a Form. Increases the priority of the modified card. May also change its function.,x,1,x,wolf,wolf,P2
+Wolf Form,Core,Played as a Form. Increases the priority of the modified card. May also change its function.,x,1,x,wolf,wolf,P1
+Umbrella,Power-up,"If you are attacked this turn, instead your attacker dies. \newline Wolf Form: In addition, return this card to your hand instead of placing it in the discard pile.",x,1,,umbrella,umbrella,
+Hypnosis,Power-up,"At end of turn, move an enemy in your Line of Sight 1 square in any direction. \newline Wolf Form: At end of turn, move an enemy in your Line of Sight 2 squares in any direction.",x,1,,hypnosis,hypnosis,
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,left2,left2,P4
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,left2,left2,P3
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,left2,left2,P2
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,left2,left2,P1
+Jetpack Form,Power-up,Modifies a move. Occurs during move phase. Move 3 in the indicated direction. Kill any stationary players you pass over or land on.,x,1,x,jetpack,jetpack,
+Rage Spasm,Power-up,"If this is not used with Wolf Form, discard it and no effect occurs. \newline Wolf Form: Attack as shown.",x,1,,immolate2,rage,
+Wasp Nest,Power-up,"Modifies a move. Occurs during other phase. Bee Hive moves in the indicated direction until it hits a block, wall or player and then attacks as shown.",x,1,x,grenade2,waspNest,
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,forward,forward,P4
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,forward,forward,P3
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,forward,forward,P2
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,forward,forward,P1
+Ring of Fire,Weapon,Attack as shown. Line of Sight is not required for this weapon.,x,1,,forcefield2,fireRing,
+Duck Form,Core,Played as a Form.,x,2,x,duck,duck,P4
+Duck Form,Core,Played as a Form.,x,2,x,duck,duck,P3
+Duck Form,Core,Played as a Form.,x,2,x,duck,duck,P2
+Duck Form,Core,Played as a Form.,x,2,x,duck,duck,P1
+Rhino Blitz,Weapon,"Modifies a move. Occurs during move phase. Move in the indicated direction until you hit a wall or a block. If you pass through a stationary player, you kill them.",x,1,x,rhino,rhino,
+Boomerang,Weapon,Attack as shown.,x,1,,boomerang2,boomerang,
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,back,back,P4
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,back,back,P3
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,back,back,P2
+Dash,Core,Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction,x,1,,back,back,P1
+Be Adorable,Power-up,Cannot be played. Discard this from hand to prevent your death.,x,1,,panda,panda,

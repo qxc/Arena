@@ -1,0 +1,514 @@
+\documentclass{article}
+
+%   Pakete dazuladen
+\input{libs.tex}
+%   Farbdefinitionen laden
+\input{colors.tex}
+%   \card-Commands laden
+\input{tikzcardsBare.tex}
+
+\newcommand{\Cast}{\textbf{Cast: }}
+\newcommand{\Trash}{\includegraphics[height = .4cm]{trash} }
+\newcommand{\Money}{\includegraphics[height = .4cm]{money}}
+\newcommand{\Damage}{\includegraphics[height = .4cm]{damage} }
+\newcommand{\Or}{\textbf{or }}
+\newcommand{\Justice}{\includegraphics[height = .4cm]{Justice} }
+
+\newcommand{\WideSpell}[1]{\begin{tikzpicture}
+\node at (0,0) {\includegraphics[height =.5cm]{blank}};
+\node at (1.5,0) {\includegraphics[height =1cm]{large}};
+\node at (1.85, -.04){\includegraphics[height=.25cm]{#1}};
+\end{tikzpicture}
+}
+
+\begin{document}
+\begin{center}
+\begin{tikzpicture} 
+\cardbackground{Power-up}
+\cardtitle{Teleport} 
+\cardborder{} 
+\cardcontent{Occurs at the start of move phase. Move to any non-occupied square.} 
+\cardimage{Teleport}{Teleport} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Power-up}
+\cardtitle{Hawk Dive} 
+\cardborder{} 
+\cardcontent{Occurs during move phase. Move to one of the marked locations. Kill any stationary enemies at that location.} 
+\cardimage{swoop2}{hawk} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Swipe} 
+\cardborder{} 
+\cardcontent{Attack as shown.} 
+\cardimage{strike2}{swipe} 
+\player{P4} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Swipe} 
+\cardborder{} 
+\cardcontent{Attack as shown.} 
+\cardimage{strike2}{swipe} 
+\player{P3} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Swipe} 
+\cardborder{} 
+\cardcontent{Attack as shown.} 
+\cardimage{strike2}{swipe} 
+\player{P2} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Swipe} 
+\cardborder{} 
+\cardcontent{Attack as shown.} 
+\cardimage{strike2}{swipe} 
+\player{P1} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Flail} 
+\cardborder{} 
+\cardcontent{You may replace your next card. \newline Wolf Form: In addition, you may replace your next Form.} 
+\cardimage{flail}{flail} 
+\player{P4} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Flail} 
+\cardborder{} 
+\cardcontent{You may replace your next card. \newline Wolf Form: In addition, you may replace your next Form.} 
+\cardimage{flail}{flail} 
+\player{P3} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Flail} 
+\cardborder{} 
+\cardcontent{You may replace your next card. \newline Wolf Form: In addition, you may replace your next Form.} 
+\cardimage{flail}{flail} 
+\player{P2} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Flail} 
+\cardborder{} 
+\cardcontent{You may replace your next card. \newline Wolf Form: In addition, you may replace your next Form.} 
+\cardimage{flail}{flail} 
+\player{P1} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Weapon}
+\modifier{} 
+ \modcardtitle{Jellyfish Throw} 
+\cardborder{} 
+\modcardcontent{Modifies a move. Instead of moving, attack as shown in the direction of that movement. Occurs during the other phase.} 
+\modcardimage{sonic}{jellyfish} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Power-up}
+\cardtitle{Whatever} 
+\cardborder{} 
+\cardcontent{When revealed, replace this card with any card in hand. \newline Wolf Form: In addition, you may replace your Form.} 
+\cardimage{shrug}{shrug} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Weapon}
+\cardtitle{RPG} 
+\cardborder{} 
+\cardcontent{Attack as shown.} 
+\cardimage{rpg2}{rpg} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{right2}{right2} 
+\player{P4} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{right2}{right2} 
+\player{P3} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{right2}{right2} 
+\player{P2} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{right2}{right2} 
+\player{P1} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Weapon}
+\cardtitle{Railgun} 
+\cardborder{} 
+\cardcontent{Attack as shown.} 
+\cardimage{railgun2}{railgun} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Power-up}
+\modifier{} 
+ \modcardtitle{Snake Strike} 
+\cardborder{} 
+\modcardcontent{Executes at start of turn. Modifies a movement: Move in indicated direction and immediately Swipe. } 
+\modcardimage{snakeStrike}{snakeStrike} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Core}
+\modifier{} 
+ \modcardtitle{Wolf Form} 
+\cardborder{} 
+\modcardcontent{Played as a Form. Increases the priority of the modified card. May also change its function.} 
+\modcardimage{wolf}{wolf} 
+\player{P4} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Core}
+\modifier{} 
+ \modcardtitle{Wolf Form} 
+\cardborder{} 
+\modcardcontent{Played as a Form. Increases the priority of the modified card. May also change its function.} 
+\modcardimage{wolf}{wolf} 
+\player{P3} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Core}
+\modifier{} 
+ \modcardtitle{Wolf Form} 
+\cardborder{} 
+\modcardcontent{Played as a Form. Increases the priority of the modified card. May also change its function.} 
+\modcardimage{wolf}{wolf} 
+\player{P2} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Core}
+\modifier{} 
+ \modcardtitle{Wolf Form} 
+\cardborder{} 
+\modcardcontent{Played as a Form. Increases the priority of the modified card. May also change its function.} 
+\modcardimage{wolf}{wolf} 
+\player{P1} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Power-up}
+\cardtitle{Umbrella} 
+\cardborder{} 
+\cardcontent{If you are attacked this turn, instead your attacker dies. \newline Wolf Form: In addition, return this card to your hand instead of placing it in the discard pile.} 
+\cardimage{umbrella}{umbrella} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Power-up}
+\cardtitle{Hypnosis} 
+\cardborder{} 
+\cardcontent{At end of turn, move an enemy in your Line of Sight 1 square in any direction. \newline Wolf Form: At end of turn, move an enemy in your Line of Sight 2 squares in any direction.} 
+\cardimage{hypnosis}{hypnosis} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{left2}{left2} 
+\player{P4} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{left2}{left2} 
+\player{P3} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{left2}{left2} 
+\player{P2} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{left2}{left2} 
+\player{P1} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Power-up}
+\modifier{} 
+ \modcardtitle{Jetpack Form} 
+\cardborder{} 
+\modcardcontent{Modifies a move. Occurs during move phase. Move 3 in the indicated direction. Kill any stationary players you pass over or land on.} 
+\modcardimage{jetpack}{jetpack} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Power-up}
+\cardtitle{Rage Spasm} 
+\cardborder{} 
+\cardcontent{If this is not used with Wolf Form, discard it and no effect occurs. \newline Wolf Form: Attack as shown.} 
+\cardimage{immolate2}{rage} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Power-up}
+\modifier{} 
+ \modcardtitle{Wasp Nest} 
+\cardborder{} 
+\modcardcontent{Modifies a move. Occurs during other phase. Bee Hive moves in the indicated direction until it hits a block, wall or player and then attacks as shown.} 
+\modcardimage{grenade2}{waspNest} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{forward}{forward} 
+\player{P4} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{forward}{forward} 
+\player{P3} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{forward}{forward} 
+\player{P2} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{forward}{forward} 
+\player{P1} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Weapon}
+\cardtitle{Ring of Fire} 
+\cardborder{} 
+\cardcontent{Attack as shown. Line of Sight is not required for this weapon.} 
+\cardimage{forcefield2}{fireRing} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Core}
+\modifier{} 
+ \modcardtitle{Duck Form} 
+\cardborder{} 
+\modcardcontent{Played as a Form.} 
+\modcardimage{duck}{duck} 
+\player{P4} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Core}
+\modifier{} 
+ \modcardtitle{Duck Form} 
+\cardborder{} 
+\modcardcontent{Played as a Form.} 
+\modcardimage{duck}{duck} 
+\player{P4} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Core}
+\modifier{} 
+ \modcardtitle{Duck Form} 
+\cardborder{} 
+\modcardcontent{Played as a Form.} 
+\modcardimage{duck}{duck} 
+\player{P3} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Core}
+\modifier{} 
+ \modcardtitle{Duck Form} 
+\cardborder{} 
+\modcardcontent{Played as a Form.} 
+\modcardimage{duck}{duck} 
+\player{P3} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Core}
+\modifier{} 
+ \modcardtitle{Duck Form} 
+\cardborder{} 
+\modcardcontent{Played as a Form.} 
+\modcardimage{duck}{duck} 
+\player{P2} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Core}
+\modifier{} 
+ \modcardtitle{Duck Form} 
+\cardborder{} 
+\modcardcontent{Played as a Form.} 
+\modcardimage{duck}{duck} 
+\player{P2} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Core}
+\modifier{} 
+ \modcardtitle{Duck Form} 
+\cardborder{} 
+\modcardcontent{Played as a Form.} 
+\modcardimage{duck}{duck} 
+\player{P1} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Core}
+\modifier{} 
+ \modcardtitle{Duck Form} 
+\cardborder{} 
+\modcardcontent{Played as a Form.} 
+\modcardimage{duck}{duck} 
+\player{P1} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\modcardbackground{Weapon}
+\modifier{} 
+ \modcardtitle{Rhino Blitz} 
+\cardborder{} 
+\modcardcontent{Modifies a move. Occurs during move phase. Move in the indicated direction until you hit a wall or a block. If you pass through a stationary player, you kill them.} 
+\modcardimage{rhino}{rhino} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Weapon}
+\cardtitle{Boomerang} 
+\cardborder{} 
+\cardcontent{Attack as shown.} 
+\cardimage{boomerang2}{boomerang} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{back}{back} 
+\player{P4} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{back}{back} 
+\player{P3} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{back}{back} 
+\player{P2} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Core}
+\cardtitle{Dash} 
+\cardborder{} 
+\cardcontent{Move 1 in the indicated direction. \newline Wolf Form: Move 2 in the indicated direction} 
+\cardimage{back}{back} 
+\player{P1} 
+\end{tikzpicture}
+\hspace{-4mm}
+\begin{tikzpicture} 
+\cardbackground{Power-up}
+\cardtitle{Be Adorable} 
+\cardborder{} 
+\cardcontent{Cannot be played. Discard this from hand to prevent your death.} 
+\cardimage{panda}{panda} 
+\player{} 
+\end{tikzpicture}
+\hspace{-4mm}
+
+
+\end{center}
+\end{document}
